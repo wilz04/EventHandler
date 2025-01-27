@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Event Handler Login</title>
+		<script type="text/javascript" language="JavaScript" src="skel/Ajax.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Form.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/OptionPane.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Login.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/User.class.js"></script>
+		<link href="templates/master.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body onload="Login.init('($e)');">
+		<form id="fLogin" name="fLogin" action="mainform.php" target="_self" method="post">
+			<div>
+				<table border="0" cellpadding="2" cellspacing="2" align="center">
+					<tr>
+						<th colspan="2" align="left">Login</th>
+					</tr>
+					<tr>
+						<td align="right">*E-mail:</td>
+						<td align="left">
+							<input type="text" id="tEmail" name="tEmail" size="32" maxlength="24" required="true" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">*Password:</td>
+						<td align="left">
+							<input type="password" id="pPass" name="pPassword" size="32" maxlength="16" required="true" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="right">
+							<div><input type="submit" id="sLogin" name="sLogin" value="Login" /></div>
+							<div>&nbsp;</div>
+							<div><a id="aForget" name="aForget" href="remind.php" target="_self" onclick="return Login.onForgetClick();">Forget Password?</a></div>
+							<div>&nbsp;</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</body>
+</html>

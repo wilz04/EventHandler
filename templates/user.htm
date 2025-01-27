@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Event Handler: &title;</title>
+		<script type="text/javascript" language="JavaScript" src="skin/menubar.js"></script>
+		<script type="text/javascript" language="JavaScript" src="auth/EMail.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Form.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Frame.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Mainform.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/OptionPane.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/User.class.js"></script>
+		<link href="templates/master.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body onload="User.init();">
+		<form id="fMainform" name="fMainform" action="&act;" target="_self" method="post" enctype="multipart/form-data">
+			<table width="100%" border="0" cellpadding="2" cellspacing="2" align="center">
+				<tr>
+					<td id="bar"></td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="2" align="center">
+							<tr>
+								<th colspan="2" align="left">&title;</th>
+							</tr>
+							<tr>
+								<td align="right">*Nombre:</td>
+								<td align="left">
+									<input type="text" id="tName" name="tFirstname" maxlength="24" value="&firstname;" required="true" />
+								</td>
+							</tr>
+							<tr>
+								<td align="right">*Primer Apellido:</td>
+								<td align="left">
+									<input type="text" id="tMiddlename" name="tMiddlename" maxlength="24" value="&middlename;" required="true" />
+								</td>
+							</tr>
+							<tr>
+								<td align="right">Segundo Apellido:</td>
+								<td align="left">
+									<input type="text" id="tLastname" name="tLastname" maxlength="24" value="&lastname;" />
+								</td>
+							</tr>
+							<tr>
+								<td	align="right">*E-mail:</td>
+								<td align="left">
+									<input type="text" id="tEmail" name="tEmail" maxlength="24" value="&email;" required="true" datatype="email" />
+								</td>
+							</tr>
+							<tr>
+								<td align="right">*Password:</td>
+								<td align="left">
+									<input type="password" id="pPassword" name="pPassword" maxlength="16" value="&password;" required="true" />
+								</td>
+							</tr>
+							<tr>
+								<td align="right">*Confirmar Password:</td>
+								<td align="left">
+									<input type="password" id="pPasskey" name="pPasskey" maxlength="16" value="&password;" required="true" />
+								</td>
+							</tr>
+							<tr>
+								<td	align="right">Tel&eacute;fono:</td>
+								<td align="left">
+									<input type="text" id="tPhone" name="tPhone" maxlength="16" value="&phone;" />
+								</td>
+							</tr>
+							<tr>
+								<td	align="right">*Rol:</td>
+								<td align="left">
+									<select id="sRole" name="sRole">&role;</select>
+									<input type="button" id="bActions" name="bActions" value="Acciones" onclick="User.onActionsClick('($id)');" />
+								</td>
+							</tr>
+							<tr>
+								<td	align="right">
+									<input type="checkbox" id="cbState" name="cbState" &state; />
+								</td>
+								<td align="left">Activo</td>
+							</tr>
+							<tr>
+								<td	align="right" valign="top">Foto:</td>
+								<td align="left">
+									<input type="file" id="fPhoto" name="fPhoto" /><div>&photo;</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="right">
+									<input type="submit" id="sSave" name="sSave" value="Guardar" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="100%">&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

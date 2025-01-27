@@ -1,0 +1,36 @@
+html, body, form, form>table {
+	height: 100%;
+}
+
+body, th, td, input {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #333333;
+}
+
+body {
+	background-color: #666666;
+}
+
+input {
+	padding: 0px;
+}
+
+table {
+	background-color: #DDDDDD;
+	border: 1px solid #AAAAAA;
+}
+
+th {
+	color: #FFFFFF;
+	background-color: #B171B1;
+}
+
+fieldset {
+	width: 0px;
+}
+
+a {
+	color: #0000CC;
+	text-decoration: none;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Event Handler Sector</title>
+		<script type="text/javascript" language="JavaScript" src="skel/Ajax.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Form.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/OptionPane.class.js"></script>
+		<link href="master.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	<form id="fSector" name="fSector" action="#" target="_self" method="post" enctype="multipart/form-data">
+		<div>
+		<table  border="0" cellpadding="0" cellspacing="0" align="center" width="400px">
+			<tr>
+				<td>
+					<table border="0" cellpadding="2" cellspacing="2" align="center" width="400px" style="border: 0px;">
+						<tr>
+							<th colspan="2" align="left">Definir Sector</th>
+						</tr>
+						<tr>
+							<td align="right">*Nombre del Sector:</td>
+							<td align="left">
+								<input type="text" id="tName" name="tName" size="32" maxlength="24" required="true" />
+							</td>
+						</tr>
+						<tr>
+							<td align="right">*Describir Sector:</td>
+							<td align="left">
+								<input type="text" id="tDescription" name="tDescription" size="32" maxlength="16" required="true" />
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>			
+					<fieldset>
+						<legend>Densidad del Sector</legend>
+						<table border="0" cellpadding="2" cellspacing="2" align="center" width="380px" style="border: 0px;">				
+							<tr>
+								<td align="right">*Numero de Filas:</td>
+								<td align="left">
+									<input type="text" id="tDensityX" name="tDensityX" size="10" maxlength="4" required="true" />
+								</td>
+								<td>
+									<input type="checkbox" id="cbActive" name="cbActive" size="10" value="true" /><label for="cbActive">Activo</label>
+								</td>
+							</tr>
+							<tr>
+								<td align="right">*Numero de Columnas:</td>
+								<td align="left">
+									<input type="text" id="tDensityY" name="tDensityY" size="10" maxlength="4" required="true" />
+								</td>
+								<td></td>
+							</tr>
+						</table>
+				</fieldset>	
+			</td>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="2" cellspacing="2" align="center" width="400px" style="border: 0px;">					
+						<tr>
+							<td align="right">*Imagen del Sector:</td>
+							<td align="left">
+								<input type="file" id="fImgSector" name="fImgSector" size="32"/>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">*Imagen del Ticket:</td>
+							<td align="left">
+								<input type="file" id="fImgTicket" name="fImgTicket" size="32"/>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="right">
+								<div><input type="submit" id="sSend" name="sSend" value="Crear" /></div>
+								<div>&nbsp;</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	</form>	
+	</body>
+</html>

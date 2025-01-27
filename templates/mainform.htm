@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Event Handler</title>
+		<script type="text/javascript" language="JavaScript" src="skin/menubar.js"></script>
+		<script type="text/javascript" language="JavaScript" src="find/Place.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/DataGrid.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Form.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Frame.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Hex.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/Mainform.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/OptionPane.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/RadioGroup.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/User.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/UsersList.class.js"></script>
+		<script type="text/javascript" language="JavaScript" src="skin/RolesList.class.js"></script>
+		<script type="text/javascript" language="JavaScript">
+			// <!--
+			Mainform.setDataGrid("($grid)");
+			//  -->
+		</script>
+		<link href="templates/master.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body onload="Mainform.init('($e)');">
+		<form id="fMainform" name="fMainform" action="#" target="_self" method="post">
+			<table width="100%" border="0" cellpadding="2" cellspacing="2" align="center">
+				<tr>
+					<td id="bar"></td>
+				</tr>
+				<tr>
+					<td>&mainarea;</td>
+				</tr>
+				<tr>
+					<td height="100%">&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
