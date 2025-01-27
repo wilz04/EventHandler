@@ -1,2 +1,0 @@
-# EventHandler
-\Polygon\EventHandler
